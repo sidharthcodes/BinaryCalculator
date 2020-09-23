@@ -23,6 +23,7 @@ btn1.addEventListener('click', () => {
 
 clear.addEventListener('click', () => {
     result.innerHTML = "";
+    binNum = [];
 });
 
 btnSum.addEventListener('click', () => {
@@ -50,7 +51,6 @@ btnDiv.addEventListener('click', () => {
     opr = "/";
 });
 
-
 btnEql.addEventListener('click', () => {
     b = parseInt(result.innerHTML, 2);
     binNum = "";
@@ -61,9 +61,7 @@ btnEql.addEventListener('click', () => {
     switch(opr){
         case '+':
             r = a + b;
-            console.log(res);
             ans = r.toString(2);
-            console.log(ans);
             break;
         case '-':
             r = a - b;
